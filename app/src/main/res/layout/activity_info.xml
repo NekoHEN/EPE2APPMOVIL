@@ -23,24 +23,16 @@
                 android:id="@+id/textView2"
                 android:layout_width="344dp"
                 android:layout_height="255dp"
+                android:layout_marginBottom="16dp"
                 android:text="Bienvenido a nuestra apasionante página web de videojuegos! Somos tu destino en línea para todo lo relacionado con el emocionante mundo de los videojuegos. Sumérgete en un universo digital lleno de acción, aventura y entretenimiento sin límites"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="48dp"
-                android:layout_height="49dp"
-                android:layout_marginTop="20dp"
-                android:contentDescription="@string/app_name"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.453"
+                app:layout_constraintHorizontal_bias="0.384"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView5"
-                app:srcCompat="@drawable/ubicacion" />
+                app:layout_constraintTop_toBottomOf="@+id/btn" />
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -49,10 +41,20 @@
                 android:layout_marginTop="16dp"
                 android:contentDescription="@string/app_name"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.517"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/imagen1" />
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="siguiente"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
