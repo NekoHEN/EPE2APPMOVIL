@@ -17,7 +17,16 @@ public class Gestor_reserva_act extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gestor_reserva);
+
+
+    vf = findViewById(R.id.slider);
+
+        for(int i=0; i < images.length; i++)
+    {
+        flipImage(images[i]);
     }
+
+}
 
     public void flipImage(int i)
     {
