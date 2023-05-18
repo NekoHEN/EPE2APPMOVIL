@@ -114,6 +114,75 @@ public class Gestor_reserva_act extends AppCompatActivity {
     }
 
 
+    public void actualizarCliente(View view)// EJEMPLO DE AÑADIR DATOS A LA BASE DE DATOS
+    {
+        // traer la base de datos
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "juegos", null, 1);
+        // permisos de escritura para hacer cambios dentro de la base de datos
+        SQLiteDatabase db = admin.getWritableDatabase();
+
+        String cod_cliente = tid.getText().toString();
+        String nom_cliente = tnombre.getText().toString();
+        String juego_cliente = tjuegos.getText().toString();
+
+        if(!cod_cliente.isEmpty() && !nom_cliente.isEmpty() && !juego_cliente.isEmpty())
+        {
+            // remplaza los campos de la tabla por los de entrada
+            ContentValues cont = new ContentValues();
+            cont.put("cod_cliente", cod_cliente);
+            cont.put("nombre", nom_cliente);
+            cont.put("juego", juego_cliente);
+
+            int cantidad = db.update("clientes", cont, "cod_cliente="+cod_cliente, null);
+            db.close();
+
+            if(cantidad == 1)
+            {
+                Toast.makeText(getBaseContext(),"Se ha actualizado con exito",Toast.LENGTH_LONG).show();
+            }else{
+                Toast.makeText(getBaseContext(),"Debes llenar campos",Toast.LENGTH_LONG).show();
+            }
+        }
+
+    }
+
+
+    public void eliminarCliente(View view)// EJEMPLO DE AÑADIR DATOS A LA BASE DE DATOS
+    {
+        // traer la base de datos
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "juegos", null, 1);
+        // permisos de escritura para hacer cambios dentro de la base de datos
+        SQLiteDatabase db = admin.getWritableDatabase();
+
+        String codigo = tid.getText().toString();
+
+        if (!codigo.isEmpty())//si el id no esta vacio
+        {
+            int cantidad = db.delete("clientes", "cod_cliente="+codigo, null);
+
+            db.close();
+            limpiarCampos();
+
+            if(cantidad == 1)
+            {
+                Toast.makeText(getBaseContext(),"Se ha eliminado el cliente: "+codigo, Toast.LENGTH_LONG).show();
+            }else
+            {
+                Toast.makeText(getBaseContext(),"El cliente no existe", Toast.LENGTH_LONG).show();
+            }
+
+        }else
+        {
+            Toast.makeText(getBaseContext(),"Debe ingresar el codigo", Toast.LENGTH_LONG).show();
+        }
+    }
+
+
+    public void limpiarCampos(){
+        tid.setText("");
+        tnombre.setText("");
+        tjuegos.setText("");
+    }
 
 
 

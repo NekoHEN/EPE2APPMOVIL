@@ -24,10 +24,10 @@
                 android:layout_width="323dp"
                 android:layout_height="216dp"
                 android:layout_marginStart="38dp"
-                android:layout_marginTop="36dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="38dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.482"
+                app:layout_constraintHorizontal_bias="0.551"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"></ViewFlipper>
 
@@ -35,13 +35,13 @@
                 android:id="@+id/txNombre"
                 android:layout_width="323dp"
                 android:layout_height="50dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:ems="10"
                 android:hint="Ingrese Nombre"
                 android:inputType="textPersonName"
                 android:text=""
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintHorizontal_bias="0.446"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txid" />
 
@@ -49,7 +49,7 @@
                 android:id="@+id/txid"
                 android:layout_width="323dp"
                 android:layout_height="50dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="12dp"
                 android:ems="10"
                 android:hint="Ingrese Codigo Cliente"
                 android:inputType="textPersonName"
@@ -61,25 +61,25 @@
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_width="326dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="28dp"
                 android:onClick="añadirClientes"
-                android:text="Button"
+                android:text="Añadir Reserva"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.326"
+                app:layout_constraintHorizontal_bias="0.545"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txJuegos" />
 
             <Button
                 android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_width="326dp"
+                android:layout_height="50dp"
+
                 android:onClick="Consultar"
-                android:text="Button"
+                android:text="Mostrar Reserva"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.369"
+                app:layout_constraintHorizontal_bias="0.545"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button2" />
 
@@ -87,15 +87,38 @@
                 android:id="@+id/txJuegos"
                 android:layout_width="323dp"
                 android:layout_height="50dp"
-                android:layout_marginTop="16dp"
+
                 android:ems="10"
                 android:hint="Ingrese juego"
                 android:inputType="textPersonName"
                 android:text=""
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintHorizontal_bias="0.446"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txNombre" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="323dp"
+                android:layout_height="48dp"
+                android:onClick="actualizarCliente"
+                android:text="Actualizar Reserva"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="323dp"
+                android:layout_height="48dp"
+                android:onClick="eliminarCliente"
+                android:text="Eliminar reserva"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button4"
+                app:layout_constraintVertical_bias="0.0" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
