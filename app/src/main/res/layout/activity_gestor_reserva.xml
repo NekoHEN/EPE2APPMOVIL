@@ -30,6 +30,72 @@
                 app:layout_constraintHorizontal_bias="0.482"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"></ViewFlipper>
+
+            <EditText
+                android:id="@+id/txNombre"
+                android:layout_width="323dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Ingrese Nombre"
+                android:inputType="textPersonName"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txid" />
+
+            <EditText
+                android:id="@+id/txid"
+                android:layout_width="323dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="Ingrese Codigo Cliente"
+                android:inputType="textPersonName"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/slider" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="añadirClientes"
+                android:text="Button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.326"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txJuegos" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:onClick="Consultar"
+                android:text="Button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.369"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+            <EditText
+                android:id="@+id/txJuegos"
+                android:layout_width="323dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Ingrese juego"
+                android:inputType="textPersonName"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txNombre" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
