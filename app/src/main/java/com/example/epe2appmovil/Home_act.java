@@ -32,6 +32,10 @@ public class Home_act extends AppCompatActivity {
         startActivity(i);
     }
 
-
+    public void info(View view)
+    {
+        Intent i = new Intent(this, Info_act.class);
+        startActivity(i);
+    }
 
 }

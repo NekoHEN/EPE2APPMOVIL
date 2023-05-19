@@ -8,12 +8,14 @@
     tools:context=".Info_act">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="370dp"
-        android:layout_height="675dp"
+        android:layout_width="367dp"
+        android:layout_height="288dp"
+        app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toBottomOf="@+id/cardView5"
+        app:layout_constraintVertical_bias="0.652">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -21,41 +23,40 @@
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="344dp"
-                android:layout_height="255dp"
-                android:layout_marginBottom="16dp"
+                android:layout_width="300dp"
+                android:layout_height="225dp"
                 android:text="Bienvenido a nuestra apasionante página web de videojuegos! Somos tu destino en línea para todo lo relacionado con el emocionante mundo de los videojuegos. Sumérgete en un universo digital lleno de acción, aventura y entretenimiento sin límites"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:textStyle="bold"
+                android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.384"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn" />
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="372dp"
+        android:layout_height="269dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="360dp"
+            android:layout_height="270dp">
 
             <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="341dp"
-                android:layout_height="319dp"
-                android:layout_marginTop="16dp"
-                android:contentDescription="@string/app_name"
+                android:id="@+id/imageView3"
+                android:layout_width="210dp"
+                android:layout_height="264dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/imagen1" />
-
-            <Button
-                android:id="@+id/btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="siguiente"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
+                app:srcCompat="@drawable/logo" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
