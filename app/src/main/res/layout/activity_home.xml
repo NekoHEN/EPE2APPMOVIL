@@ -97,7 +97,8 @@
                     android:id="@+id/button9"
                     android:layout_width="145dp"
                     android:layout_height="65dp"
-                    android:text="Button" />
+                    android:onClick="finalizar"
+                    android:text="Cerrar Sesión" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
