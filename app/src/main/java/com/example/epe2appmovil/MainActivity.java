@@ -14,9 +14,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void Calificar(View view)
+    public void home(View view)
     {
-        Intent i = new Intent(this, Gestor_reserva_act.class);
+        Intent i = new Intent(this, Home_act.class);
         startActivity(i);
     }
 
