@@ -12,13 +12,13 @@
         android:theme="@style/Theme.EPE2AppMovil"
         tools:targetApi="31">
         <activity
+            android:name=".Calificar"
+            android:exported="false" />
+        <activity
             android:name=".Info_act"
             android:exported="false" />
         <activity
             android:name=".Home_act"
-            android:exported="false" />
-        <activity
-            android:name=".Valoracion_act"
             android:exported="false" />
         <activity
             android:name=".valoracion"

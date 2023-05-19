@@ -37,6 +37,10 @@ public class Home_act extends AppCompatActivity {
         Intent i = new Intent(this, Info_act.class);
         startActivity(i);
     }
+    public void calificar(View view){
+        Intent i = new Intent(this, Calificar.class);
+        startActivity(i);
+    }
     public void finalizar(View view){
         finish();
     }
