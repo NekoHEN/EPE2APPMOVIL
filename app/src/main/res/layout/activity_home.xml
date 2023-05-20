@@ -35,10 +35,12 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="180dp"
+                android:layout_height="24dp"
                 android:layout_marginTop="16dp"
+
                 android:text="Bienvenido Gamer"
+                android:textColor="#0C0C0C"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.502"
@@ -58,11 +60,13 @@
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="146dp"
-                android:layout_height="101dp"
+                android:layout_width="144dp"
+                android:layout_height="125dp"
                 android:layout_marginTop="28dp"
                 android:layout_marginEnd="28dp"
+
                 android:text="Con Enjoy tendrás una amplia gama de juegos que podrás acceder de forma fácil y confiable"
+                android:textColor="#0C0C0C"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -95,8 +99,9 @@
 
                 <Button
                     android:id="@+id/button9"
-                    android:layout_width="145dp"
-                    android:layout_height="65dp"
+                    android:layout_width="153dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="#030D4A"
                     android:onClick="finalizar"
                     android:text="Cerrar Sesión" />
             </androidx.cardview.widget.CardView>
@@ -115,8 +120,9 @@
 
                 <Button
                     android:id="@+id/button8"
-                    android:layout_width="145dp"
-                    android:layout_height="65dp"
+                    android:layout_width="153dp"
+                    android:layout_height="68dp"
+                    android:backgroundTint="#030D4A"
                     android:onClick="reserva"
                     android:text="Reserva" />
             </androidx.cardview.widget.CardView>
@@ -132,8 +138,9 @@
 
                 <Button
                     android:id="@+id/button6"
-                    android:layout_width="145dp"
-                    android:layout_height="65dp"
+                    android:layout_width="153dp"
+                    android:layout_height="68dp"
+                    android:backgroundTint="#030D4A"
                     android:onClick="calificar"
                     android:text="Calificar" />
             </androidx.cardview.widget.CardView>
@@ -151,8 +158,9 @@
 
                 <Button
                     android:id="@+id/button7"
-                    android:layout_width="145dp"
-                    android:layout_height="65dp"
+                    android:layout_width="153dp"
+                    android:layout_height="68dp"
+                    android:backgroundTint="#030D4A"
                     android:onClick="info"
                     android:text="Información"
                     android:textSize="14sp" />

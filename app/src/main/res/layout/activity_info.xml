@@ -25,6 +25,7 @@
                 android:id="@+id/textView2"
                 android:layout_width="300dp"
                 android:layout_height="225dp"
+                android:textColor="#0C0C0C"
                 android:text="Bienvenido a nuestra apasionante página web de videojuegos! Somos tu destino en línea para todo lo relacionado con el emocionante mundo de los videojuegos. Sumérgete en un universo digital lleno de acción, aventura y entretenimiento sin límites"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
