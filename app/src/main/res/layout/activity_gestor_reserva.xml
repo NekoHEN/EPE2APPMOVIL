@@ -10,6 +10,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="370dp"
         android:layout_height="675dp"
+        app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
